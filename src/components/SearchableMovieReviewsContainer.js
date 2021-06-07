@@ -39,7 +39,6 @@ class SearchableMovieReviewsContainer extends Component {
                     <input id="movieToFind" type="text" name="movieToFind" value={this.state.searchTerm} onChange={this.handleChange}></input>
 
                 </form>
-                {/* {reviews.map(movie => <MovieReviews reviews={movie} key={movie.date_updated}/>)} */}
                 <MovieReviews reviews={reviews}/>
             </div>
             
