@@ -36,7 +36,8 @@ fetchData = () =>{
         return ( 
             
             <div className="latest-movie-reviews">
-                {reviews.map(movie => <MovieReviews reviews={movie} key={movie.date_updated}/>)}
+                {/* {reviews.map(movie => <MovieReviews reviews={movie} key={movie.date_updated}/>)} */}
+                <MovieReviews reviews={reviews}/>
             </div>
          );
     }
