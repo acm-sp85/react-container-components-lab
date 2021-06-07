@@ -2,14 +2,21 @@
 import React from 'react';
 
 const MovieReview = (props) => {
-
     return (
     <div className="review-list">
+
+        {props.reviews.map(movie => {
+            return (
+
         <div className="review">
-            <h3>{props.reviews.display_title}</h3>
-            <p>{props.reviews.headline}</p>
-            <p>{props.reviews.summary_short}</p>
+            <h3>{movie.display_title}</h3>
+            <p>{movie.headline}</p>
+            <p>{movie.summary_short}</p>
         </div>
+            )
+
+
+        })}
     </div>
     )
 }
